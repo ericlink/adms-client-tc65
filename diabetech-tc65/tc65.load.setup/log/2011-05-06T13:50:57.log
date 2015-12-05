@@ -1,0 +1,36 @@
+at+cops?
++COPS: 0
+
+OK
+at+cops?
++COPS: 0,0,"T-Mobile"
+
+OK
+AT+CSQ
++CSQ: 11,6
+
+OK
+AT^SJNET="telargo.t-mobile.com"
+ERROR
+at+sjnet?
+ERROR
+AT^SJNET=gprs,internet,username,password
+OK
+at^jss
+ERROR
+at^sjnet="gprs", "telargo.t-mobile.com","",""
+OK
+ATDT*99***1#
+ERROR
+ATDT*99***1#
+ERROR
+AT+CGDCONT?
+OK
+AT+CGDCONT=1,"IP","telargo.t-mobile.com"
+OK
+ATDT*99***1#
+ERROR
+~.Connected.
+Connected.
+
+Disconnected.

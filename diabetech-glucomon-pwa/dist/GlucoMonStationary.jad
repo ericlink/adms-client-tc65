@@ -1,0 +1,15 @@
+MIDlet-1: GlucoMonStationary, , net.diabetech.glucomonstationary.GlucoMonStationary
+MIDlet-Description: Copyright 2003-2011 Eric Link. All Rights Reserved Worldwide.
+MIDlet-Jar-Size: 28478
+MIDlet-Jar-URL: 0.4.4/GlucoMonStationary.jar
+MIDlet-Name: GlucoMON-PWA
+MIDlet-Vendor: Sandlion INC
+MIDlet-Version: 0.4.4
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: IMP-NG
+host: Uk01
+isDebug: true
+medicalDeviceFactory: net.diabetech.onetouchfamily.OneTouchFamilyMedicalDeviceFactory
+runDiagnostics: false
+sendStartupMessage: true
+shutdownAfterOnePass: true

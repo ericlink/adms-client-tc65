@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE folder-listing SYSTEM "obex-folder-listing.dtd">
+<folder-listing version="1.0">
+   <file name="GlucoMonStationary.jad" size="594" modified="20020101T000048" user-perm="RWD" group-perm="" />
+   <file name="GlucoMonStationary.jar" size="28461" modified="20020101T000048" user-perm="RWD" group-perm="" />
+</folder-listing>
+[H[2Jspawn cu -l /dev/ttyUSB0 -s 115200
+Connected.
+at
+OK
+at^scid
+^SCID: 8901260762224719964
+
+OK
+at+cgsn
+354745031185418
+
+OK
+at^scfg="Userware/Passwd","",Jd3jK9u,Jd3jK9u
+ERROR
+at^scfg="Userware/Autostart","Jd3jK9u","1"
+^SCFG: "Userware/Autostart","1"
+
+OK
+at^scfg="Userware/autostart/appname","Jd3jK9u","a:/ota/GlucoMonStationary.jar"
+^SCFG: "Userware/Autostart/AppName","a:/ota/GlucoMonStationary.jar"
+
+OK
+at^scfg="Userware/autostart/delay","Jd3jK9u","100"
+^SCFG: "Userware/Autostart/Delay","100"
+
+OK
+at^scfg="Userware/Stdout","FILE","65535","a:/logfile","secure"
+^SCFG: "Userware/Stdout","FILE","65535","a:/logfile","secure"
+
+OK
+at^scfg?
+^SCFG: "AutoExec","0","0","0","0",""
+^SCFG: "AutoExec","0","1","0","0","","000:00:00","086:28:15"
+^SCFG: "AutoExec","0","1","1","0","","000:00:00","086:28:15"
+^SCFG: "AutoExec","0","1","2","0","","000:00:00","086:28:15"
+^SCFG: "Call/ECC","255"
+^SCFG: "GPRS/ATS0/withAttach","on"
+^SCFG: "GPRS/AutoAttach","disabled"
+^SCFG: "GPRS/PersistentContexts","0"
+^SCFG: "GPRS/RingOnIncomingData","off"
+^SCFG: "MEopMode/Airplane","off"
+^SCFG: "MEopMode/Airplane/OnStart","off"
+^SCFG: "MEShutdown/OnIgnition","on"
+^SCFG: "PowerSaver/Mode9/Timeout","20"
+^SCFG: "Radio/Band","12","15"
+^SCFG: "Radio/CNS","0"
+^SCFG: "Radio/FirstScan","0"
+^SCFG: "Radio/OutputPowerReduction","3"
+^SCFG: "Serial/USB/DDD","0","0","0409","0681","0034","Siemens AG Wireless Modules","TC65",""
+^SCFG: "Tcp/BufSize","5200"
+^SCFG: "Tcp/IRT","3"
+^SCFG: "Tcp/MR","10"
+^SCFG: "Tcp/OT","6000"
+^SCFG: "Tcp/SAck","1"
+^SCFG: "Tcp/TTcp","0"
+^SCFG: "Tcp/WithURCs","on"
+^SCFG: "Trace/Syslog/OTAP","0"
+^SCFG: "Userware/Autostart","1"
+^SCFG: "Userware/Autostart/AppName","a:/ota/GlucoMonStationary.jar"
+^SCFG: "Userware/Autostart/Delay","100"
+^SCFG: "Userware/DebugInterface","0.0.0.0","0.0.0.0","0"
+^SCFG: "Userware/Passwd"
+^SCFG: "Userware/Mode","normal","","0"
+^SCFG: "Userware/Stdout","FILE","65535","a:/logfile","secure"
+^SCFG: "Userware/Watchdog","0"
+^SCFG: "URC/CallStatus/CIEV","restricted"
+^SCFG: "URC/CallStatus/SLCC","verbose"
+^SCFG: "URC/Datamode/Ringline","off"
+^SCFG: "URC/Ringline","local"
+^SCFG: "URC/Ringline/ActiveTime","2"
+
+OK
+at&w
+OK
+at^smso
+^SMSO: MS OFF
+
+OK

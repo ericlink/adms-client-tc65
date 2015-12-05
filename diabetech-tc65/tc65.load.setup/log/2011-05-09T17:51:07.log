@@ -1,0 +1,18 @@
+[H[2Jspawn cu -l /dev/ttyUSB0 -s 115200
+Connected.
+
+^SYSSTART
+at^scfg="Userware/Autostart","Jd3jK9u","0"
+^SCFG: "Userware/Autostart","0"
+
+OK
+at&w
+OK
+at^scfg?
+^SCFG: "AutoExec","0","0","0","0",""
+^SCFG: "AutoExec","0","1","0","0","","000:00:00","086:28:15"
+^SCFG: "AutoExec","0","1","1","0","","000:00:00","086:28:15"
+^SCFG: "AutoExec","0","1","2","0","","000:00:00","086:28:15"
+^SCFG: "Call/ECC","255"
+^SCFG: "GPRS/ATS0/withAttach","on"
+^SCFG: "GPRS/AutoAttach"

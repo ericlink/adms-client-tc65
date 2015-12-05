@@ -1,0 +1,68 @@
+This is README file for JOBEXFTP 2.4
+
+1. About Project
+What is JObexFTP?
+JObexFTP is a Java implementation of Obex Client protocol under Siemiens/Cinterion AT specification aimed to work with TC65 and TC65i modules, but can perfecly work in any OBEX device with simple adaptation.
+It is developed as an opensource substitute of Cinterion Module Exchange Suite (MES) and also as a library to give Java applications MES capabilities. 
+The project is mainly developed by Linux users but it works in Windows too, as 98% of the project is cross-plataform.
+
+2. Dependences
+Java 1.6 and RxTx library.
+RxTx is the only library that implements serial communication under java that is cross plataform. Its freely avaliable in http://rxtx.qbang.org/
+Linux users can use Makefile to install RxTx to JObexFTP use only or use shellscripts (under lib/rxtx) to install for all applications.
+
+3. Features
+- IDE Integration
+- All Official MES funcionality.
+- Make install script
+- Intuitive API calls 
+- Support (IrDA) Object Exchange Protocol
+- Easy implementations of new devices 
+- OO
+- Unity tests
+
+3. Known bugs
+- Aborting put operations leaves the file half there.
+
+4. Not implemented yet
+- Internationalization
+- .deb and .rpm packages
+
+5. Help JOBEXFTP
+If you have information on how fixing bugs or wants to implement new features, please contact me via email. 
+All your help is needed to make this project better.
+
+6. License
+This project is licensed in LGPL, please read the license file.
+In summary you can use this code in any commercial application, but any changes/improvement in JOBEXFTP must be shared with the community.
+Please report if you are using JOBEXFTP and give me feedback of your problems and needs, they might be developed.  
+
+7. Authoring
+This project is managed and mainly developed by Ricardo Guilherme Schmidt <ricardo@lhf.ind.br>
+The stand alone CUI is inspired by TC64SH, developed by Christoph Vilsmeier <http://www.vilsmeier-consulting.de/tc65sh.html>
+It uses small parts of OBEX4J, developed by Joey Shen <joey.shen@sun.com>
+And it was first inspired by ObexTool by Ondrej Janovskï <oj@alarex.cz>
+
+8. Questions
+You can ask questions about the use and about how the code works or how to make changes on it by the following contact information:
+Ricardo Guilherme Schmidt (home) <3esmit@gmail.com>
+Cellphone +55 47 84037215 (Just speak english and portuguese)
+
+9. Other
+If you use JOBEXFTP keep in touch with it updates, and help development. 
+This project dosen't ask for money donations, but asks for your bug reports, feedback and developing help.
+Use GitHub.com tools or email-me to feedback. 
+
+10. Disclaimer
+Copyright 2011 Ricardo Guilherme Schmidt
+
+THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, 
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND 
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR 
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, 
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+POSSIBILITY OF SUCH DAMAGE.

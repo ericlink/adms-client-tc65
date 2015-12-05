@@ -1,0 +1,9 @@
+com.siemens.icm.io
+com.siemens.icm.io.file
+java.io
+java.lang
+java.util
+javax.microedition.io
+javax.microedition.midlet
+javax.microedition.pki
+javax.microedition.rms

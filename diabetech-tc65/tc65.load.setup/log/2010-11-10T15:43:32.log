@@ -1,0 +1,189 @@
+
+^SYSSTART
+at
+OK
+at
+OK
+at^scfg="Userware/Stdout","FILE","65535","1","secure"
+ERROR
+at^scfg="Userware/Stdout"
+^SCFG: "Userware/Stdout","ASC1"
+
+OK
+at^scfg="Userware/Stdout","Jd3jK9u","FILE","65535","1","secure"
+ERROR
+atd
+ERROR
+at^scfg?
+^SCFG: "AutoExec","0","0","0","0",""
+^SCFG: "AutoExec","0","1","0","0","","000:00:00","086:28:15"
+^SCFG: "AutoExec","0","1","1","0","","000:00:00","086:28:15"
+^SCFG: "AutoExec","0","1","2","0","","000:00:00","086:28:15"
+^SCFG: "Call/ECC","255"
+^SCFG: "GPRS/ATS0/withAttach","on"
+^SCFG: "GPRS/AutoAttach","disabled"
+^SCFG: "GPRS/PersistentContexts","0"
+^SCFG: "GPRS/RingOnIncomingData","off"
+^SCFG: "MEopMode/Airplane","off"
+^SCFG: "MEopMode/Airplane/OnStart","off"
+^SCFG: "MEShutdown/OnIgnition","on"
+^SCFG: "PowerSaver/Mode9/Timeout","20"
+^SCFG: "Radio/Band","12","15"
+^SCFG: "Radio/CNS","0"
+^SCFG: "Radio/FirstScan","0"
+^SCFG: "Radio/OutputPowerReduction","3"
+^SCFG: "Serial/USB/DDD","0","0","0409","0681","0034","Siemens AG Wireless Modules","TC65",""
+^SCFG: "Tcp/BufSize","5200"
+^SCFG: "Tcp/IRT","3"
+^SCFG: "Tcp/MR","10"
+^SCFG: "Tcp/OT","6000"
+^SCFG: "Tcp/SAck","1"
+^SCFG: "Tcp/TTcp","0"
+^SCFG: "Tcp/WithURCs","on"
+^SCFG: "Trace/Syslog/OTAP","0"
+^SCFG: "Userware/Autostart","0"
+^SCFG: "Userware/Autostart/AppName","a:/ota/GlucoMonStationary.jar"
+^SCFG: "Userware/Autostart/Delay","100"
+^SCFG: "Userware/DebugInterface","0.0.0.0","0.0.0.0","0"
+^SCFG: "Userware/Passwd"
+^SCFG: "Userware/Mode","normal","","0"
+^SCFG: "Userware/Stdout","ASC1"
+^SCFG: "Userware/Watchdog","0"
+^SCFG: "URC/CallStatus/CIEV","restricted"
+^SCFG: "URC/CallStatus/SLCC","verbose"
+^SCFG: "URC/Datamode/Ringline","off"
+^SCFG: "URC/Ringline","local"
+^SCFG: "URC/Ringline/ActiveTime","2"
+
+OK
+at^scfg?="Userware/Stdout"
+ERROR
+at^scfg="Userware/Stdout","FILE","65535","1","secure"\
+ERROR
+at^scfg="Userware/Stdout","ASC1"
+^SCFG: "Userware/Stdout","ASC1"
+
+OK
+at^scfg="Userware/Stdout","FILE"
+ERROR
+at^scfg="Userware/Stdout","ASC1"
+^SCFG: "Userware/Stdout","ASC1"
+
+OK
+at^scfg="Userware/Stdout","FILE",65535,1,"secure"
+ERROR
+at^scfg="Userware/Stdout","asc1"
+ERROR
+at^scfg="Userware/Stdout","ASC1"
+^SCFG: "Userware/Stdout","ASC1"
+
+OK
+at^scfg="Userware/Stdout","ASC1"
+^SCFG: "Userware/Stdout","ASC1"
+
+OK
+at+cgmi
+SIEMENS
+
+OK
+at_cmi
+ERROR
+at+cmi
+ERROR
+at+gmi
+SIEMENS
+
+OK
+at^scfg=?
+^SCFG: "AutoExec",("0-1","0-1","0-2","0-255","120","000:00:05-240:00:00")
+^SCFG: "Call/ECC",("0"-"255")
+^SCFG: "GPRS/ATS0/withAttach",("on","off")
+^SCFG: "GPRS/AutoAttach",("disabled","enabled")
+^SCFG: "GPRS/PersistentContexts",("0","1")
+^SCFG: "GPRS/RingOnIncomingData",("on","off")
+^SCFG: "MEopMode/Airplane",("on","off")
+^SCFG: "MEopMode/Airplane/OnStart",("on","off")
+^SCFG: "MEShutdown/OnIgnition",("on","off")
+^SCFG: "PowerSaver/Mode9/Timeout",("5-36000")
+^SCFG: "Radio/Band",("1-12","1-15")
+^SCFG: "Radio/CNS",("0","1")
+^SCFG: "Radio/FirstScan",("0","1")
+^SCFG: "Radio/OutputPowerReduction",("1","2","3")
+^SCFG: "Serial/USB/DDD",("0","1"),("0"),(4),(4),(4),(63),(63),(4)
+^SCFG: "Tcp/BufSize",("3000-20000")
+^SCFG: "Tcp/IRT",("1-60")
+^SCFG: "Tcp/MR",("1-60")
+^SCFG: "Tcp/OT",("1-6000")
+^SCFG: "Tcp/SAck",("0","1")
+^SCFG: "Tcp/TTcp",("0","1")
+^SCFG: "Tcp/WithURCs",("off","on")
+^SCFG: "Trace/Syslog/OTAP",("0","1")
+^SCFG: "Userware/Autostart",("0","1")
+^SCFG: "Userware/Autostart/AppName",("0-100")
+^SCFG: "Userware/Autostart/Delay",("0-10000")
+^SCFG: "Userware/DebugInterface",,,("0","1")
+^SCFG: "Userware/Passwd",("0-8")
+^SCFG: "Userware/Mode",("normal","debug","test"),("0-126"),("0-65535")
+^SCFG: "Userware/Stdout",("ASC0","ASC1","USB","FILE","UDP","NULL"),("1-65535"),("0-125"),("buffered","secure")
+^SCFG: "Userware/Watchdog",("0","1","2")
+^SCFG: "URC/CallStatus/CIEV",("restricted","verbose")
+^SCFG: "URC/CallStatus/SLCC",("restricted","verbose")
+^SCFG: "URC/Datamode/Ringline",("off","on")
+^SCFG: "URC/Ringline",("off","local","asc0")
+^SCFG: "URC/Ringline/ActiveTime",("0","1","2")
+
+OK
+at^scfg="Userware/Stdout","FILE","65535","1","secure"
+ERROR
+at^scfg="Userware/Stdout","FILE","65535","0","buffered"
+ERROR
+at^scfg="Userware/Stdout","FILE","65535","1","buffered"
+ERROR
+at^scfg="Userware/Stdout","FILE","1","1","buffered"
+ERROR
+at^scfg="Userware/Stdout","FILE","1","1","secure"
+ERROR
+at^scfg="Userware/Stdout","FILE1"
+ERROR
+at^scfg="Userware/Stdout","FILE"
+ERROR
+at^scfg="Userware/Stdout","ASC1"
+^SCFG: "Userware/Stdout","ASC1"
+
+OK
+at^scfg="Userware/Stdout","file"
+ERROR
+at^scfg="Userware/Stdout","USB"
+^SCFG: "Userware/Stdout","USB"
+
+OK
+at^scfg="Userware/Stdout","UDP"
+ERROR
+at^scfg="Userware/Stdout","FILE","","1","secure"
+ERROR
+at^scfg="Userware/Stdout","FILE","","","secure"
+ERROR
+at^scfg="Userware/Stdout","UDP"
+ERROR
+at^scfg="Userware/Stdout","UDP",2000
+^SCFG: "Userware/Stdout","UDP","2000"
+
+OK
+at^scfg="Userware/Stdout","FILE","2000","1","secure"
+ERROR
+at^scfg="Userware/Stdout","FILE","2000"
+ERROR
+at^scfg="Userware/Stdout","NULL"
+^SCFG: "Userware/Stdout","NULL"
+
+OK
+at^scfg="Userware/Stdout","FILE","1","1","buffered"
+ERROR
+at^scfg="Userware/Stdout","FILE","65535","a:/log.txt","secure"
+^SCFG: "Userware/Stdout","FILE","65535","a:/log.txt","secure"
+
+OK
+~.Connected.
+Connected.
+
+Disconnected.

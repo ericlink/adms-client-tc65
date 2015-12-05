@@ -1,0 +1,18 @@
+at
+OK
+at
+OK
+at^scfg="Userware/Stdout","FILE","65535","1","secure"\r\n
+^SCFG: "Userware/Stdout","FILE","65535","1","buffered"
+
+ERROR
+at^scfg="Userware/Stdout","FILE","65535","1","secure"
+^SCFG: "Userware/Stdout","FILE","65535","1","secure"
+
+OK
+at&w
+OK
+~.Connected.
+Connected.
+
+Disconnected.

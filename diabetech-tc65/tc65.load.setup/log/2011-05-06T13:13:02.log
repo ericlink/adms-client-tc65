@@ -1,0 +1,29 @@
+at
+OK
+at_co
+ERROR
+at+cops?
++COPS: 0
+
+OK
+at+cops?
++COPS: 0
+
+OK
+at+cops=?
+ERROR
+at^cops?
+ERROR
+at+cops?
++COPS: 0,0,"T-Mobile"
+
+OK
+at+cops?
++COPS: 0,0,"T-Mobile"
+
+OK
+~[elink-inspiron1420][Unrecognized.  Use ~~ to send ~]
+~.Connected.
+Connected.
+
+Disconnected.

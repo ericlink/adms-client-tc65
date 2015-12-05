@@ -1,0 +1,63 @@
+#!/usr/bin/expect -f
+
+# set Variables
+set timeout 10
+set AT "at\r\n"
+set RESP_CONNECT "Connected."
+set RESP_OK "*OK*"
+set DISCONNECT "~."
+
+# now connect tc65
+spawn cu -l  /dev/ttyUSB0 -s 115200
+sleep 1
+
+match_max 100000
+expect $RESP_CONNECT
+
+####
+send -- $AT
+expect $RESP_OK
+
+send -- at^scid\r\n
+expect -re "ERROR|OK"
+
+send -- at+cgsn\r\n
+expect $RESP_OK
+
+### configuration commands
+send -- at^scfg="Userware/Passwd","",Jd3jK9u,Jd3jK9u\r\n
+expect -re "ERROR|OK"
+
+send -- at^scfg="Userware/Autostart","Jd3jK9u","1"\r\n
+expect $RESP_OK
+send -- at^scfg="Userware/autostart/appname","Jd3jK9u","a:/ota/GlucoMonStationary.jar"\r\n
+expect $RESP_OK
+
+# delay in 10ths of seconds, e.g. 100 == 100 / 10 = 10 seconds
+send -- at^scfg="Userware/autostart/delay","Jd3jK9u","100"\r\n
+expect $RESP_OK
+
+# log to a file, rolling
+send -- at^scfg="Userware/Stdout","FILE","65535","a:/logfile","secure"\r\n
+expect $RESP_OK
+
+# display settings
+sleep 2
+send -- at^scfg?\r\n
+expect -re "ERROR|OK"
+
+# save
+send -- at&w\r\n
+expect $RESP_OK
+
+# turn off tc65
+sleep 1
+send -- at^smso\r\n
+expect $RESP_OK
+
+# disconnect
+send -- $DISCONNECT
+
+
+
+

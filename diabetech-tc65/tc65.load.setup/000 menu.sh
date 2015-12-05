@@ -1,0 +1,1 @@
+/home/elink/Sandlion/Products/easySHARE/easySHARE Product/module/cinterion/diabetech-tc65/tc65.load.setup/menu.sh

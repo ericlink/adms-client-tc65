@@ -1,0 +1,8 @@
+[H[2Jspawn cu -l /dev/ttyUSB0 -s 115200
+Connected.
+
+^SHUTDOWN
+
+^EXIT 00010000,00e54b49414d582c2838303230312c31432c32292046414c5345cu: Got hangup signal
+
+Disconnected.

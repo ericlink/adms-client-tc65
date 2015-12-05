@@ -1,0 +1,11 @@
+at^scfg="Userware/Stdout"
+?
+at
+at
+at^scfg="Userware/Stdout","FILE","65535","1","secure"
+
+ERROR
+~.Connected.
+Connected.
+
+Disconnected.

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE folder-listing SYSTEM "obex-folder-listing.dtd">
+<folder-listing version="1.0">
+   <file name="GlucoMonStationary.jad" size="494" modified="20020101T000030" user-perm="RWD" group-perm="" />
+   <file name="GlucoMonStationary.jar" size="23263" modified="20020101T000030" user-perm="RWD" group-perm="" />
+</folder-listing>
+[H[2Jspawn cu -l /dev/ttyUSB0 -s 115200
+Connected.
+at
+OK
+at^scid
+^SCID: 89310380106034850091
+
+OK
+at+cgsn
+354745031233879
+
+OK
+at^scfg="Userware/Passwd","",Jd3jK9u,Jd3jK9u
+^SCFG: "Userware/Passwd"
+
+OK
+at^scfg="Userware/Autostart","Jd3jK9u","1"
+^SCFG: "Userware/Autostart","1"
+
+OK
+at^scfg="Userware/autostart/appname","Jd3jK9u","a:/ota/GlucoMonStationary.jar"
+^SCFG: "Userware/Autostart/AppName","a:/ota/GlucoMonStationary.jar"
+
+OK
+at^scfg="Userware/autostart/delay","Jd3jK9u","100"
+^SCFG: "Userware/Autostart/Delay","100"
+
+OK
+at^scfg?
+^SCFG: "AutoExec","0","0","0","0",""
+^SCFG: "AutoExec","0","1","0","0","","000:00:00","086:28:15"
+^SCFG: "AutoExec","0","1","1","0","","000:00:00","086:28:15"
+^SCFG: "AutoExec","0","1","2","0","","000:00:00","086:28:15"
+^SCFG: "Call/ECC","255"
+^SCFG: "GPRS/ATS0/withAttach","on"
+^SCFG: "GPRS/AutoAttach"

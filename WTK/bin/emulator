@@ -1,0 +1,29 @@
+#!/bin/bash
+
+## args device and descriptor
+#-Xdevice:Siemens TC65 WTK 
+#-Xdescriptor:/home/elink/Diabetech/Development/src/diabetech/trunk/project/diabetech-glucomon-pwa/dist/nbrun5094789969403867277/GlucoMonStationary.jad
+
+echo "Emulator Script: " $0
+echo "Arguments: " $@
+
+echo "GlucoMON-PWA jad: "  `ls -lt /home/elink/Diabetech/Development/src/diabetech/trunk/project/diabetech-glucomon-pwa/dist/*.jad`
+echo "GlucoMON-PWA jar: "  `ls -lt /home/elink/Diabetech/Development/src/diabetech/trunk/project/diabetech-glucomon-pwa/dist/*.jar`
+
+
+SRC_DIR=/home/elink/Diabetech/Development/src/diabetech/trunk/project/diabetech-glucomon-pwa/dist
+DEST_DIR=/home/elink/Diabetech/Development/src/diabetech/trunk/project/diabetech-tc65/siemens/WTK/bin/ota
+WTK_DIR=/home/elink/Diabetech/Development/src/diabetech/trunk/project/diabetech-tc65/siemens/WTK/bin
+
+## copy the files over to the tc65 and start the application
+echo "Copy files to loader directory"
+cp $SRC_DIR/GlucoMonStationary.jad $DEST_DIR
+cp $SRC_DIR/GlucoMonStationary.jar $DEST_DIR
+
+echo "Load files on tc65"
+cd $WTK_DIR
+./load.tc65.sh
+
+echo "Start java on tc65"
+cd $WTK_DIR
+./run.java.on.tc65.sh

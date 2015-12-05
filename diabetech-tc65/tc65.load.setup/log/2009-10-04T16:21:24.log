@@ -1,0 +1,9 @@
+[H[2Jspawn cu -l /dev/ttyUSB0 -s 115200
+Connected.
+at
+OK
+at^sjra=a:/ota/GlucoMonStationary.jar
+ERROR
+cu: Got hangup signal
+
+Disconnected.

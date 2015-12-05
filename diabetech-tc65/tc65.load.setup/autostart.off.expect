@@ -1,0 +1,37 @@
+#!/usr/bin/expect -f
+
+# set Variables
+set timeout 10
+set AT "at\r\n"
+set RESP_CONNECT "*Connected.*"
+set RESP_OK "*OK*"
+set DISCONNECT "~."
+
+# now connect tc65
+spawn cu -l  /dev/ttyUSB0 -s 115200
+sleep 1
+
+match_max 100000
+expect $RESP_CONNECT
+
+
+####
+send -- $AT
+expect $RESP_OK
+
+### configuration commands
+send -- at^scfg="Userware/Autostart","Jd3jK9u","0"\r\n
+expect $RESP_OK
+send -- at&w\r\n
+expect $RESP_OK
+send -- at^scfg?\r\n
+expect $RESP_OK
+send -- at^smso\r\n
+expect $RESP_OK
+
+# disconnect
+send -- $DISCONNECT
+
+
+
+

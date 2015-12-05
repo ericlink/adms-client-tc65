@@ -1,0 +1,23 @@
+spawn cu -l /dev/ttyUSB0 -s 115200
+Connected.
+
+
+^SHUTDOWN
+
+^SYSSTART
+at
+OK
+at^scid
+ERROR
+at+cgsn
+354745031216353
+
+OK
+at^scfg?
+^SCFG: "AutoExec","0","0","0","0",""
+^SCFG: "AutoExec","0","1","0","0","","000:00:00","000:00:00"
+^SCFG: "AutoExec","0","1","1","0","","000:00:00","000:00:00"
+^SCFG: "AutoExec","0","1","2","0","","000:00:00","000:00:00"
+^SCFG: "GPRS/ATS0/withAttach","on"
+^SCFG: "GPRS/AutoAttach"
+ERROR

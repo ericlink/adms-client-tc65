@@ -1,0 +1,7 @@
+
+
+[Tue, 30 Oct 2007 15:17:54 UTC]
+[a:27:{s:10:"SCRIPT_URL";s:13:"/otap/notify/";s:10:"SCRIPT_URI";s:37:"http://www.diabetech.net/otap/notify/";s:9:"HTTP_HOST";s:20:"www.diabetech.net:80";s:15:"HTTP_CONNECTION";s:10:"Keep-Alive";s:15:"HTTP_USER_AGENT";s:58:"TC65/355632002468412 Profile/IMP-NG Configuration/CLDC-1.1";s:14:"CONTENT_LENGTH";s:2:"11";s:4:"PATH";s:28:"/usr/local/bin:/usr/bin:/bin";s:16:"SERVER_SIGNATURE";s:0:"";s:15:"SERVER_SOFTWARE";s:46:"Apache/2.0.55 (Ubuntu) mod_jk2/2.0.4 PHP/5.1.2";s:11:"SERVER_NAME";s:17:"www.diabetech.net";s:11:"SERVER_ADDR";s:12:"72.249.18.40";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:13:"32.145.24.243";s:13:"DOCUMENT_ROOT";s:22:"/var/www/diabetech.net";s:12:"SERVER_ADMIN";s:18:"[no address given]";s:15:"SCRIPT_FILENAME";s:44:"/var/www/diabetech.net/otap/notify/index.php";s:11:"REMOTE_PORT";s:4:"1026";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:0:"";s:11:"REQUEST_URI";s:13:"/otap/notify/";s:11:"SCRIPT_NAME";s:22:"/otap/notify/index.php";s:8:"PHP_SELF";s:22:"/otap/notify/index.php";s:12:"REQUEST_TIME";i:1193757474;s:4:"argv";a:0:{}s:4:"argc";i:0;}]
+[a:0:{}]
+[Tue, 30 Oct 2007 15:17:54 UTC]
+[s:11:"900 Success";]

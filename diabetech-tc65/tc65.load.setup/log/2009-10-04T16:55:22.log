@@ -1,0 +1,5 @@
+[H[2Jspawn cu -l /dev/ttyUSB0 -s 115200
+Connected.
+cu: write: Input/output error
+
+Disconnected.

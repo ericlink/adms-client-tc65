@@ -1,0 +1,32 @@
+[H[2Jspawn cu -l /dev/ttyUSB0 -s 115200
+Connected.
+
+
+^SHUTDOWN
+
+^SYSSTART
+at
+OK
+at^scid
+^SCID: 89014104232781108997
+
+OK
+at^scfg="Userware/Passwd","",Jd3jK9u,Jd3jK9u
+ERROR
+at^scfg="Userware/Autostart","Jd3jK9u","1"
+^SCFG: "Userware/Autostart","1"
+
+OK
+at^scfg="Userware/autostart/appname","Jd3jK9u","a:/ota/GlucoMonStationary.jar"
+^SCFG: "Userware/Autostart/AppName","a:/ota/GlucoMonStationary.jar"
+
+OK
+at^scfg="Userware/autostart/delay","Jd3jK9u","100"
+^SCFG: "Userware/Autostart/Delay","100"
+
+OK
+at^scfg="Userware/Stdout","FILE","65535","1","secure"
+ERROR
+
+
+^SHUTDOWN

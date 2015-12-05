@@ -1,0 +1,37 @@
+*** Monitor OTAP
+at^scfg="Trace/Syslog/OTAP",1
+
+
+*** SETUP PASSWORD and AutoStart
+###at^scfg="Userware/Passwd",,Jd3jK9u,Jd3jK9u
+
+at^scfg="Userware/Passwd","","Jd3jK9u","Jd3jK9u"
+at^scfg="Userware/Autostart","Jd3jK9u","1"
+at^scfg="Userware/autostart/appname","Jd3jK9u","a:/ota/GlucoMonStationary.jar"
+at^scfg="Userware/autostart/delay","Jd3jK9u","10"
+at&w
+
+
+*** AT COMMANDS TO OTAP
+*** assumes password is already set
+*** This works, must put full http: URL into the JAD file by hand though
+
+at^sjotap="Jd3jK9u","http://www.diabetech.net/poc/GlucoMON.jad","a:/ota",,,"gprs","proxy",,,,"http://www.diabetech.net/poc/otap-logger.php"
+at^sjotap
+at^scfg="Trace/Syslog/OTAP","1"
+
+
+
+with basic auth
+AT^SJOTAP="Jd3jK9u","http://gdyx.diabetech.net/st/otap/GlucoMonStationary.jad","a:/ota","Q4tFPi!rp6ZV)ozv","m!HPre8WJB@hvfnJ
+
+
+","gprs","proxy",,,,"http://gdyx.diabetech.net/st/otap/notify/"
+at^sjotap
+at^scfg="Trace/Syslog/OTAP","1"
+
+
+
+AtCommandManager.send( "\rAT^SJOTAP=\"Jd3jK9u\",\"http://gdyx.diabetech.net/st/otap/GlucoMonStationary.jad\",\"a:/ota\",,,\"gprs\",\"proxy\",,,,\"http://gdyx.diabetech.net/st/otap/notify/\"\r" );
+AtCommandManager.send( "\rAT^SJOTAP\r" );
+

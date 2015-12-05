@@ -1,0 +1,25 @@
+at
+{ENTER}{DELAY 500}
+at
+{ENTER}{DELAY 500}
+at
+{ENTER}{DELAY 500}
+at
+{ENTER}{DELAY 500}
+at
+{ENTER}{DELAY 500}
+at{CARET}scfg="Userware/Passwd",,Jd3jK9u,Jd3jK9u
+{ENTER}{DELAY 500}
+at{CARET}scfg="Userware/Autostart","Jd3jK9u","1"
+{ENTER}{DELAY 500}
+at{CARET}scfg="Userware/autostart/appname","Jd3jK9u","a:/ota/GlucoMonStationary.jar"
+{ENTER}{DELAY 500}
+at{CARET}scfg="Userware/autostart/delay","Jd3jK9u","10"
+{ENTER}{DELAY 500}
+at&w
+{ENTER}{DELAY 1000}
+at{CARET}scid
+{ENTER}{DELAY 500}
+at{CARET}smso
+
+

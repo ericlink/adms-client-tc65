@@ -1,0 +1,10 @@
+at^scfg="Userware/autostart/appname"
+
+
+at^scfg="Userware/autostart/delay"
+
+
+at^scfg="Userware/Autostart"
+
+
+

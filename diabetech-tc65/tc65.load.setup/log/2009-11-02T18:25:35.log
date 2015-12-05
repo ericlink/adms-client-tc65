@@ -1,0 +1,16 @@
+[H[2Jspawn cu -l /dev/ttyUSB0 -s 115200
+Connected.
+at
+OK
+at^scid
+^SCID: 89310380106034850067
+
+OK
+at+cgsn
+354745031233440
+
+OK
+at^scfg="Userware/Passwd",,Jd3jK9u,Jd3jK9u
+ERROR
+at^scfg="Userware/Autostart","Jd3jK9u","1"
+ERROR

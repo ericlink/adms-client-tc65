@@ -1,0 +1,3 @@
+spawn cu -l /dev/ttyUSB0 -s 115200
+cu: open (/dev/ttyUSB0): No such file or directory
+cu: /dev/ttyUSB0: Line in use

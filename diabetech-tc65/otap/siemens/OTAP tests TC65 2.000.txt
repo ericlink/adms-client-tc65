@@ -1,0 +1,188 @@
+OTAP tests on TC65 2.000
+
+
+### ----------------------------------
+### OTAP with AT^SJOTAP on proxy APN
+### ----------------------------------
+
+at^scfg=userware/autostart,,1
+at^scfg="Trace/Syslog/OTAP","1"
+at^sjotap="siemens","http://www.wmae.com/otap/TC65Example/OtapExample.jad","a:/ota",,,"gprs","proxy"
+at^sjotap
+
+^SYSSTART
+at^scfg="Trace/Syslog/OTAP","1"
+
+SYSLOG ENABLED
+
+[OTAP] Parameters set per AT command:
+[OTAP] JAD File URL: http://www.wmae.com/otap/TC65Example/OtapExample.jad
+[OTAP] App Dir: a:/ota
+[OTAP] Bearer: GPRS
+[OTAP] Apn Or Num: proxy
+[OTAP] SM Pwd: siemens
+[OTAP] Parameters set per AT command:
+[OTAP] JAD File URL: http://www.wmae.com/otap/TC65Example/OtapExample.jad
+[OTAP] App Dir: a:/ota
+[OTAP] Bearer: GPRS
+[OTAP] Apn Or Num: proxy
+[OTAP] SM Pwd: siemens
+[OTAP] Parameters for current procedure:
+[OTAP] JAD File URL: http://www.wmae.com/otap/TC65Example/OtapExample.jad
+[OTAP] App Dir a:/ota
+[OTAP] Http User: 
+[OTAP] Http Pwd: 
+[OTAP] Bearer: GPRS
+[OTAP] Apn Or Num: proxy
+[OTAP] Net User: 
+[OTAP] Net Pwd: 
+[OTAP] Dns: 0
+[OTAP] Notify URL: 
+[OTAP] Try to establish a GPRS connection ...
+[OTAP] GPRS connection established.
+[OTAP] Try to get http://www.wmae.com/otap/TC65Example/OtapExample.jad ...
+[OTAP] Connected.
+[OTAP] Transfer finished.
+[OTAP] Try to get http://www.wmae.com/otap/TC65Example/OtapExample.jar ...
+[OTAP] Connected.
+[OTAP] Transfer finished.
+[OTAP] JAM status: 900 Success.
+[OTAP] Try to post status to http://www.wmae.com/otap/TC65Example/result.php ...
+[OTAP] Connected.
+[OTAP] Status posted sucessfully.
+[OTAP] Reboot now.
+^SYSSTART
+Congratulations!!!
+OTAP succeeded. Type ESC over ASC1 to end the program.
+Otherwise the application will terminate in 30 secs.
+Application ends!
+
+### ----------------------------------
+### OTAP SMS
+### ----------------------------------
+
+# On ASC1
+at^scfg="Trace/Syslog/OTAP","1"
+
+# Content
+OTAP_IMPNG
+PWD:siemens
+APPDIR:a:/ota
+JADURL:http://www.wmae.com/otap/TC65Example/OtapExample.jad
+
+# Parameters
+Number: 5006851535
+CA: Use CSCA
+DCS: Class0/8bit
+PID: 125 (0x7D)
+Message Reference: 0
+
+Generated message:
+Size: 109
+0001000A8105605851537DF4614F5441505F494D504E470A5057443A7369656D656E730A4150504449523A613A2F6F74610A4A414455524C3A687474703A2F2F7777772E776D61652E636F6D2F6F7461702F544336354578616D706C652F4F7461704578616D706C652E6A61640A
+
+# Content
+OTAP_IMPNG
+PWD:siemens
+BEARER:gprs
+APNORNUM:proxy
+START:install
+
+# Parameters
+Number: 5006851535
+CA: Use CSCA
+DCS: Class0/8bit
+PID: 125 (0x7D)
+Message Reference: 0
+
+Generated message:
+Size:76
+0001000A8105605851537DF4404F5441505F494D504E470A5057443A7369656D656E730A4245415245523A677072730A41504E4F524E554D3A70726F78790A53544152543A696E7374616C6C0A
+
+log on ASC0
+at+cnmi=2,1
+
+OK
+at+cmgs=109
+
+> 0001000A8105605851537DF4614F5441505F494D504E470A5057443A7369656D656E730A4150504449523A613A2F6F74610A4A414455524C3A68747470
+3A2F2F7777772E776D61652E636F6D2F6F7461702F544336354578616D706C652F4F7461704578616D706C652E6A61640A
++CMGS: 24
+
+OK
+
++CMT: ,116
+07919107739603F4040B915100861535F57DF46070317183328A614F5441505F494D504E470A5057443A7369656D656E730A4150504449523A613A2F6F
+74610A4A414455524C3A687474703A2F2F7777772E776D61652E636F6D2F6F7461702F544336354578616D706C652F4F7461704578616D706C652E6A61
+640A
+
+at+cmgs=76
+
+> 0001000A8105605851537DF4404F5441505F494D504E470A5057443A7369656D656E730A4245415245523A677072730A41504E4F524E554D3A70726F78
+790A53544152543A696E7374616C6C0A
++CMGS: 25
+
+OK
+
++CMT: ,83
+07919107739603F4040B915100861535F57DF46070317193318A404F5441505F494D504E470A5057443A7369656D656E730A4245415245523A67707273
+0A41504E4F524E554D3A70726F78790A53544152543A696E7374616C6C0A
+^SYSSTART
+0þžøž~<?<`?f?àž<`?†žþžøž?
+
+
+
+### Log on ASC1
+
+[OTAP] Short message: OTAP_IMPNGPWD:siemensAPPDIR:a:/otaJADURL:http://www.wmae.com/otap/TC65Example/OtapExample.jad
+[OTAP] SM ID found
+[OTAP] FILEURL = http://www.wmae.com/otap/TC65Example/OtapExample.jad
+[OTAP] APPDIR = a:/ota
+[OTAP] Short message: OTAP_IMPNGPWD:siemensBEARER:gprsAPNORNUM:proxySTART:install
+[OTAP] SM ID found
+[OTAP] BEARER = GPRS
+[OTAP] APNORNUM = proxy
+[OTAP] START = install
+[OTAP] Parameters set per AT command:
+[OTAP] JAD File URL: http://www.wmae.com/otap/TC65Example/OtapExample.jad
+[OTAP] App Dir: a:/ota
+[OTAP] Bearer: GPRS
+[OTAP] Apn Or Num: proxy
+[OTAP] SM Pwd: siemens
+[OTAP] Parameters for current procedure:
+[OTAP] JAD File URL: http://www.wmae.com/otap/TC65Example/OtapExample.jad
+[OTAP] App Dir a:/ota
+[OTAP] Http User: 
+[OTAP] Http Pwd: 
+[OTAP] Bearer: GPRS
+[OTAP] Apn Or Num: proxy
+[OTAP] Net User: 
+[OTAP] Net Pwd: 
+[OTAP] Dns: 0
+[OTAP] Notify URL: 
+[OTAP] Try to establish a GPRS connection ...
+[OTAP] GPRS connection established.
+[OTAP] Try to get http://www.wmae.com/otap/TC65Example/OtapExample.jad ...
+[OTAP] Connected.
+[OTAP] Transfer finished.
+[OTAP] Try to get http://www.wmae.com/otap/TC65Example/OtapExample.jar ...
+[OTAP] Connected.
+[OTAP] Transfer finished.
+[OTAP] JAM status: 900 Success.
+[OTAP] Try to post status to http://www.wmae.com/otap/TC65Example/result.php ...
+[OTAP] Connected.
+[OTAP] Status posted sucessfully.
+[OTAP] Reboot now.
+^SYSSTART
+Congratulations!!!
+OTAP succeeded. Type ESC over ASC1 to end the program.
+Otherwise the application will terminate in 30 secs.
+Application ends!
+
+
+
+PID=0x00, DCS = 0xF5 (8 bit data, class 3)
+109
+0001000A81056058515300F7614F5441505F494D504E470A5057443A7369656D656E730A4150504449523A613A2F6F74610A4A414455524C3A687474703A2F2F7777772E776D61652E636F6D2F6F7461702F544336354578616D706C652F4F7461704578616D706C652E6A61640A
+76
+0001000A81056058515300F7404F5441505F494D504E470A5057443A7369656D656E730A4245415245523A677072730A41504E4F524E554D3A70726F78790A53544152543A696E7374616C6C0A

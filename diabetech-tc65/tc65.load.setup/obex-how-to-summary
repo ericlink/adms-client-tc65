@@ -1,0 +1,157 @@
+/opt/obexftp-tc65/bin/obexftp 
+
+
+cu -l  /dev/ttyUSB0 -s 9600 
+cu -l  /dev/ttyUSB0 -s 115200
+
+
+at^sjra=a:/ota/GlucoMonStationary.jar
+
+~$ echo 'DM@'
+
+
+
+DEVICE=/dev/ttyUSB0
+echo DM > $DEVICE
+stty -F $DEVICE 9600 -parity -cstopb    # 9600 baud 8N1
+
+
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie  \
+-C ota  \
+-k GlucoMonStationary.jad \
+-k GlucoMonStationary.jar \
+-p ota/GlucoMonStationary.jad \
+-p ota/GlucoMonStationary.jar \
+;
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie  -l ota
+
+
+     ~$ command
+            Run command, sending the standard output to the remote system.
+
+
+cu -l  /dev/ttyUSB0 -s 115200 ~$ echo 'at'
+cu -l  /dev/ttyUSB0 -s 115200 ~$ echo "at\n"
+
+
+cu -l  /dev/ttyUSB0 -s 115200
+at
+at^scfg="Userware/Passwd",,Jd3jK9u,Jd3jK9u
+at^scfg="Userware/Autostart","Jd3jK9u","1"
+at^scfg="Userware/autostart/appname","Jd3jK9u","a:/ota/GlucoMonStationary.jar"
+at^scfg="Userware/autostart/delay","Jd3jK9u","10"
+at&w
+at^scfg?
+at^scid
+at+cgsn
+at^smso
+
+
+
+
+
+_______________
+
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie -l  -C ota/ -k GlucoMonStationary.jad -k GlucoMonStationary.jar -l ../
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie -l  
+
+
+
+
+cu -l  /dev/ttyUSB0 -s 115200
+
+at^scfg?
+at
+at
+at^scfg="Userware/Passwd",,Jd3jK9u,Jd3jK9u
+
+at^scfg="Userware/Autostart","Jd3jK9u","1"
+
+at^scfg="Userware/autostart/appname","Jd3jK9u","a:/ota/GlucoMonStationary.jar"
+
+at^scfg="Userware/autostart/delay","Jd3jK9u","10"
+
+at&w
+
+
+at^scfg="Userware/Autostart","Jd3jK9u","0"
+
+at^scfg="Userware/autostart/appname","Jd3jK9u","a:/GlucoMonStationary.jar"
+
+
+
+
+at^scfg="Userware/Autostart","Jd3jK9u","1"
+at^scfg="Userware/Autostart","","0"
+at^scfg="Userware/Autostart","","1"
+at&w
+at&v
+at^scfg="Userware/autostart/delay","Jd3jK9u","10"
+at^scfg="Userware/autostart/delay","Jd3jK9u","100"
+at^scfg="Userware/autostart/delay","","100"
+at^scfg="Userware/autostart/delay","","10"
+at&f
+at^scfg="Userware/autostart/appname","Jd3jK9u","a:/GlucoMonStationary.jar"
+at^scfg="Userware/autostart/appname","Jd3jK9u","a:/ota/GlucoMonStationary.jar"
+at^scfg="Userware/autostart/appname","Jd3jK9u",""
+at^scfg="Userware/autostart/appname"
+at^scfg="Userware/autostart/delay"
+at^scfg="Userware/Autostart"
+
+at^scfg="Userware/autostart/appname","","a:/GlucoMonStationary.jar"
+
+at^scfg="Userware/autostart/appname","","a:/ota/GlucoMonStationary.jar"
+at^scfg="Userware/autostart/appname","",""
+at^scfg="Userware/autostart/appname"
+at^scfg="Userware/autostart/delay"
+at^scfg="Userware/Autostart"
+
+at^scfg?
+^SCFG: "Userware/Passwd","","Jd3jK9u","Jd3jK9u"
+
+
+LIST FILES:
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie -l
+/usr/local/bin/obexftp -t /dev/ttyUSB1 -U sie -l
+
+
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie -C ota/ -k GlucoMonStationary.jad -k GlucoMonStationary.jar
+
+
+
+USB0
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie -l
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie -l ota
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie -C ota/
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie -k ota/GlucoMonStationary.jad
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie -k ota/GlucoMonStationary.jar
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie -l ota/GlucoMonStationary.jad
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie -l ota/GlucoMonStationary.jar
+USB1
+/usr/local/bin/obexftp -t /dev/ttyUSB1 -U sie -l
+/usr/local/bin/obexftp -t /dev/ttyUSB1 -U sie -l ota
+/usr/local/bin/obexftp -t /dev/ttyUSB1 -U sie -k ota
+/usr/local/bin/obexftp -t /dev/ttyUSB1 -U sie -k ota/GlucoMonStationary.jad
+/usr/local/bin/obexftp -t /dev/ttyUSB1 -U sie -k ota/GlucoMonStationary.jar
+
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie -k GlucoMonStationary.jad
+/usr/local/bin/obexftp -t /dev/ttyUSB0 -U sie -k GlucoMonStationary.jar
+
+
+
+* List the content of the FFS:
+  obexftp -t /dev/ttyS0 -U sie -l
+  
+* Copy a File from the FFS:
+  obexftp -t /dev/ttyS0 -U sie -g filename
+  (using a uppercase G causes the file to be deleted from the FFS after copying)
+  
+* Send a File to the FFS:
+  obexftp -t /dev/ttyS0 -U sie -p <filepath>/filename
+  (if the file already exists on the module the new data will be appended)
+  
+* Replace a file
+  obexftp -t /dev/ttyS0 -U sie -k filename -p <filepath>/filename
+  (the k deletes the file on the module and p copies the new file with the same name)
+  
+  

@@ -1,0 +1,48 @@
+at
+OK
+AT+CGDCONT=1,"IP","telargo.t-mobile.com"
+OK
+ATDT*99***1#
+ERROR
+at+cops?
++COPS: 0,0,"T-Mobile"
+
+OK
+AT^SJNET="telargo.t-mobile.com"
+ERROR
+AT^SJNET="telargo.t-mobile.com"
+ERROR
+AT+CSQ
++CSQ: 14,0
+
+OK
+AT+COPS=0
+OK
+AT^SJNET="telargo.t-mobile.com"
+ERROR
+AT+CGDCONT=?
++CGDCONT: (1-2),"IP",,,(0),(0-1)
+
+OK
+at
+OK
+AT+CGDCONT?
++CGDCONT: 1,"IP","telargo.t-mobile.com","",0,0
+
+OK
+AT^SJNET="telargo.t-mobile.com"
+ERROR
+at+cops?
++COPS: 0,0,"T-Mobile"
+
+OK
+AT+CGDCONT=?
++CGDCONT: (1-2),"IP",,,(0),(0-1)
+
+OK
+AT^SJNET="telargo.t-mobile.com"
+ERROR
+Connected.
+Connected.
+
+Disconnected.
